@@ -1,8 +1,13 @@
 // ichika_sub_1.datos.js
-// SOLO datos. Este es el archivo que editas para cambiar las fotos de esta subgaleria.
+// SOLO datos y referencias a textos. 
+// Para cambiar títulos/descripciones: edita ichika_textos.js
+// Para cambiar fotos/links: edita este archivo.
 
-const ichika_sub_1_datos = {
-  titulo: "Ichika - Galería 1",
+import { TEXTOS_ICHIKA } from './ichika_textos.js';
+
+export const DATOS_GALERIA = {
+  titulo: TEXTOS_ICHIKA.titulo_ichika_sub_1,
+  descripcion: TEXTOS_ICHIKA.desc_ichika_sub_1,
   portada: "",
   items: [
     {
