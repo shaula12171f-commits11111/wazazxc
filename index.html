@@ -156,12 +156,13 @@
 
 <main id="main"></main>
 
-<!-- Ichika: datos, luego logica, luego contenedor -->
-<script src="galerias/ichika/ichika_sub_1.datos.js"></script>
-<script src="galerias/ichika/ichika_sub_1.js"></script>
-<script src="galerias/ichika/ichika_contenedor.js"></script>
-
-<script src="contenedores.js"></script>
+<!-- Ichika: textos, datos, logica, contenedor -->
+<script type="module">
+  import { ichika } from './galerias/ichika/ichika_contenedor.js';
+  import { categorias } from './contenedores.js';
+  
+  window.categorias = categorias;
+</script>
 
 <script>
   // ruta: [] = menu principal, ["galerias"] = lista de chicas,
